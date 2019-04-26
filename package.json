@@ -1,0 +1,31 @@
+{
+  "name": "dialogflow-webhook-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adu013/dialoglow-webhook-demo.git"
+  },
+  "keywords": [
+    "dialogflow",
+    "webhook",
+    "nodejs",
+    "weather",
+    "api"
+  ],
+  "author": "Arindam D",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adu013/dialoglow-webhook-demo/issues"
+  },
+  "homepage": "https://github.com/adu013/dialoglow-webhook-demo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  }
+}
