@@ -5,11 +5,11 @@ const request = require("request");
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3000;
 
 app.get('/',  function(req, res) {
   res.send('done');
-})
+});
 
 ///////////////////
 ///// Webhook /////
@@ -28,16 +28,16 @@ app.post('/webhook', function(req, res) {
       "fulfillmentText": response,
       "fulfillmentMessages": [{ "text": { "text": ["Text response from webhook"]}}],
       "source":""
-    }
+    };
     console.log('Here is the response to dialogflow');
     console.log(responseObj);
     return res.json(responseObj);
-})
+});
 
 
 /****** Weather  API *********/
 var apiKey = 'd3105c44f56ccd8f5e0d4fdf87de5cf5';
-var result
+var result;
 
 function  callback(error, response, body) {
   if (error) {
