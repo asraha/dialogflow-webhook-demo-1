@@ -36,7 +36,7 @@ app.post('/webhook', function(req, res) {
 
 
 /****** Weather  API *********/
-var apiKey = 'c536a185c521b<sometext>';
+var apiKey = 'd3105c44f56ccd8f5e0d4fdf87de5cf5';
 var result
 
 function  callback(error, response, body) {
