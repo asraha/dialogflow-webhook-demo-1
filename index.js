@@ -26,7 +26,7 @@ app.post('/webhook', function(req, res) {
     let response = " ";
     let  responseObj = {
       "fulfillmentText": response,
-      "fulfillmentMessages": [{ "text": { "text": [w]}}],
+      "fulfillmentMessages": [{ "text": { "text": ["Text response from webhook"]}}],
       "source":""
     }
     console.log('Here is the response to dialogflow');
